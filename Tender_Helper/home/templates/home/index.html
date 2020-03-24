@@ -1,0 +1,357 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="icon" href="{% static 'sierra/img/fav-icon.png' %}" type="image/x-icon" />
+        <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+        <title>首頁</title>
+
+        <!-- Icon css link -->
+        <link href="{% static 'sierra/css/font-awesome.min.css' %}" rel="stylesheet">
+        <!-- Bootstrap -->
+        <link href="{% static 'sierra/css/bootstrap.min.css' %}" rel="stylesheet">
+
+        <!-- Rev slider css -->
+        <link href="{% static 'sierravendors/revolution/css/settings.css' %}" rel="stylesheet">
+        <link href="{% static 'sierra/vendors/revolution/css/layers.css' %}" rel="stylesheet">
+        <link href="{% static 'sierra/vendors/revolution/css/navigation.css' %}" rel="stylesheet">
+
+        <!-- Extra plugin css -->
+        <link href="{% static 'sierra/vendors/owl-carousel/owl.carousel.min.css' %}" rel="stylesheet">
+        <link href="{% static 'sierra/vendors/magnify-popup/magnific-popup.css' %}" rel="stylesheet">
+
+        <link href="{% static 'sierra/css/style.css' %}" rel="stylesheet">
+        <link href="{% static 'sierra/css/responsive.css' %}" rel="stylesheet">
+
+        <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+        <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+        <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+        <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+        <![endif]-->
+
+        <!-- added -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-109921688-1"></script>
+        <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+
+            gtag('config', 'UA-109921688-1');
+        </script>
+        <!-- added -->
+
+    </head>
+    <body style="font-family: "Microsoft JhengHei","微軟正黑體",sans-serif !important;">
+
+        <!--================Header Menu Area =================-->
+        <header class="main_menu_area">
+
+            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+
+
+                <a class="navbar-brand" href="#"><img src="{% static 'sierra/img/logo.png' %}" alt=""></a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav">
+                        <li class="nav-item"><a class="nav-link" href="/home/" style="font-family: Microsoft JhengHei;">首頁</a></li>
+                        <li class="nav-item"><a class="nav-link" href="/home/tendsearch/" style="font-family: Microsoft JhengHei;">標案搜尋</a></li>
+                        <li class="nav-item"><a class="nav-link" href="/home/competitor/" style="font-family: Microsoft JhengHei;">競爭者分析</a></li>
+
+                        <li class="nav-item"><a class="nav-link" href="/home/predict/" style="font-family: Microsoft JhengHei;">潛在競爭者</a></li>
+
+                    </ul>
+                </div>
+            </nav>
+        </header>
+        <!--================End Header Menu Area =================-->
+
+
+        <!--================Slider Area =================-->
+        <section class="banner_area">
+            <div class="container">
+                <div class="banner_inner_text">
+                    <h2>Tender Helper</h2>
+                    <p style="font-family: Microsoft JhengHei;">&nbsp;標案一把罩-企業分析小幫手</p>
+                </div>
+            </div>
+        </section>
+        <!--================End Slider Area =================-->
+
+        <!--================Feature Area =================-->
+        <section class="feature_area">
+            <div class="container" >
+                <div class="c_title" >
+
+                    <img src="{% static 'sierra/img/icon/title-icon.png' %}" alt="">
+                    <h6>Project Motivation</h6>
+                    <h2 style="font-family: Microsoft JhengHei;">專案動機</h2>
+                </div>
+                <div class="row feature_inner">
+                    <div class="col-lg-4 col-sm-6">
+                        <div class="feature_item" style="padding:15px 80px;" >
+                            <div class="f_icon" >
+                                <img src="{% static 'sierra/img/icon/f-icon-1.png' %}" alt="">
+                            </div>
+                            <h4  style="font-family: Microsoft JhengHei;">政府資訊掌握</h4>
+                            <p  style="font-family: Microsoft JhengHei;">透過中華民國政府電子採購網的公開訊息揭露，讓公司可以掌握政府的採購資訊</p>
+
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-sm-6">
+                        <div class="feature_item" style="padding:15px 80px;">
+                            <div class="f_icon">
+                                <img src="{% static 'sierra/img/icon/f-icon-2.png' %}" alt="">
+                            </div>
+                            <h4  style="font-family: Microsoft JhengHei;">提升競爭多元度</h4>
+                            <p  style="font-family: Microsoft JhengHei;">在資訊透明化之後，預期可為產業內競爭產生多元性變化</p>
+
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-sm-6">
+                        <div class="feature_item" style="padding:15px 80px;">
+                            <div class="f_icon">
+                                <img src="{% static 'sierra/img/icon/f-icon-3.png' %}" alt="">
+                            </div>
+                            <h4  style="font-family: Microsoft JhengHei;">標案品質提升</h4>
+                            <p  style="font-family: Microsoft JhengHei;">增加標案競爭激烈度，相對提升政府標案品質</p>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--================End Feature Area =================-->
+
+        <!--================The best slider Area =================-->
+        <section class="best_3d_area">
+            <div class="left_3d">
+                <div class="shap_slider_inner owl-carousel">
+                    <div class="item" style="padding:15px 5px;">
+                        <h4  style="font-family: Microsoft JhengHei;">系統開發背景</h4>
+                        <p  style="font-family: Microsoft JhengHei;">2012年後，政府開始強調資料的公開性，相關單位會將所有可獲取的資訊公布於網站，其中也包含政府的標案資訊。隨網路普及化與資訊科技發展，人們對於資料取用有更龐大的需求，許多成熟的資訊服務與串接相應而生，形成新的服務系統。</p>
+                        <div class="media">
+
+                            <img src="{% static 'sierra/img/team/people/people-5.png' %}" alt="">
+                            <div class="media-body">
+                                <h5  style="font-family: Microsoft JhengHei;">周世恩 老師</h5>
+                                <h6  style="font-family: Microsoft JhengHei;">Qsearch 執行長</h6>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+                </div>
+            </div>
+            <div class="right_text">
+                <div class="right_text_inner">
+                    <div class="text_3d">
+                        <div class="l_title">
+                            <img src="{% static 'sierra/img/icon/title-icon.png' %}" alt="">
+                            <h6>Backgroud</h6>
+                            <h2>We don’t hide, we stand tall in front of chalenge</h2>
+                        </div>
+                        <p  style="font-family: Microsoft JhengHei;">
+                            但政府的標案，因資訊透明度不佳等因素，造成產業結構固化，包含品質低落與圖利特定廠商等問題。特別在台灣兩黨制的政治形態下，容易讓標案成為對手攻擊的話題，運用媒體操作，報導政府採購與標案的負面新聞屢屢可見，致使民眾對政府標案信任感普遍不佳，而廠商也因為特定的利益結構而失去獲得標案的機會。希望藉由本系統，促成標案資訊的公開、透明化，使參與競標的廠商更多元，提升政府標案品質，進而增加民眾對政府的信心。
+                        </p>
+                    </div>
+                    <div class="shap_mobile">
+                        <img src="{% static 'img/iphone4.png' %}" alt="">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--================End The best slider Area =================-->
+
+        <!--================Team People Area =================-->
+        <section class="team_people_area">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-lg-6">
+                        <div class="team_people_text">
+                            <div class="l_title">
+
+                                <img src="{% static 'sierra/img/icon/title-icon.png' %}" alt="">
+                                <h6  style="font-family: Microsoft JhengHei;">團隊成員背景分析</h6>
+                                <h2  style="font-family: Microsoft JhengHei;">How we build a strong team of great people</h2>
+
+                            </div>
+                            <p  style="font-family: Microsoft JhengHei;"> 在<strong>教育部數位人文創新人才培育計畫</strong>下，進行社會人文與理工跨領域的結合。
+                                結合政經系對產業及政府運作的敏銳視角，以人本社會的角度出發，
+                                再加上資訊科技的落地技術，實作出符合社會需求的分析系統。
+                                我們是一群由政治經濟與資訊管理背景組成的三人小組，
+                                藉由持續洞察產業的演進趨勢，挖掘社會數據更深的價值。
+                            </p>
+                            <ul>
+                                <li><a  style="font-family: Microsoft JhengHei;">跨領域分析實作</a></li>
+                                <li><a  style="font-family: Microsoft JhengHei;">大數據分析標案內容</a></li>
+                                <li><a  style="font-family: Microsoft JhengHei;">政經視角產業知識</a></li>
+                                <li><a style="font-family: Microsoft JhengHei;">政府開放資料運用</a style="font-family: Microsoft JhengHei;"></li>
+                                <li><a style="font-family: Microsoft JhengHei;">資訊管理技術支援</a style="font-family: Microsoft JhengHei;"></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="team_img_inner">
+                            <div class="row">
+                                <div class="col-lg-6 col-6">
+                                    <div class="team_img_item">
+
+                                        <img src="{% static 'img/team/people/people-1.jpg' %}" alt="">
+                                    </div>
+                                </div>
+                                <div class="col-lg-6 col-6">
+                                    <div class="team_img_item">
+                                        <img src="{% static 'sierra/img/team/people/people-2.jpg' %}" alt="">
+                                    </div>
+                                </div>
+                                <div class="col-lg-6 col-6">
+                                    <div class="team_img_item">
+                                        <img src="{% static 'sierra/img/team/people/people-3.jpg' %}" alt="">
+                                    </div>
+                                </div>
+                                <div class="col-lg-6 col-6">
+                                    <div class="team_img_item">
+                                        <img src="{% static 'sierra/img/team/people/people-4.jpg' %}" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--================End Team People Area =================-->
+
+        <!--================Get in Touch Area =================-->
+        <section class="get_in_touch_area">
+            <div class="container" style="padding-bottom: 50px;">
+                <div class="row get_touch_inner">
+
+                    <div class="col-lg-6">
+                        <div class="touch_details">
+                            <div class="l_title" style="padding-bottom: 20px;">
+
+                                <img src="{% static 'sierra/img/icon/title-icon.png' %}" alt="">
+                                <h6>程式碼、資料以及授權</h6>
+                                <h2>Data、Code and Authorization</h2>
+                            </div>
+
+                            <h4 style="padding-bottom: 5px;">資料情況</h4>
+                            <ul id="status" style='list-style-type:square;'>
+                                <li>API: <code>https://pcc.g0v.ronny.tw/api/getinfo</code></li>
+                            </ul>
+
+                        </div>
+                    </div>
+
+                    <div class="col-lg-6">
+                        <br>
+                        <ul style='list-style-type:square;line-height:30px;'>
+                            <li>後端API程式碼：<a href="https://github.com/ronnywang/pcc.g0v.ronny.tw">https://github.com/ronnywang/pcc.g0v.ronny.tw</a></li>
+                            <li>前端展示程式碼：<a href="https://github.com/ronnywang/pcc-viewer">https://github.com/ronnywang/pcc-viewer</a></li>
+                            <li>若需商業利用，政府採購網另有提供開放資料之<a href="http://web.pcc.gov.tw/tpsreport/transfer/dataTransfer.do?method=getOkfnOpenDataXml">資料集</a></li>
+
+                            <li>API 資料是從<a href="https://web.pcc.gov.tw">中華民國政府電子採購網</a>收集而來，API 有開放 CORS ，歡迎大家自由界接利用，但是請遵循原始資料來源<a href="https://web.pcc.gov.tw/pis/main/pis/client/pssa/right.do">著作權聲明</a>，如下：<br>
+                            <ol>
+                                <li>本採購網上所刊載以行政院公共工程委員會名義公開發表之著作，即著作人為行政院公共工程委員會者，在合理範圍內，得重製、公開播送或公開傳輸，利用時，並請註明出處。</li>
+                                <li>本採購網上之資訊，可為個人或家庭非營利之目的而重製。</li>
+                                <li>為報導、評論、教學、研究或其他正當目的，在合理範圍內，得引用本採購網上之資訊，引用時，並請註明出處。</li>
+                                <li>其他合理使用情形，請參考著作權法第44條至第65條之規定。</li>
+                            </ol>
+                            </li>
+
+                        </ul>
+
+                    </div>
+
+
+
+
+                </div>
+            </div>
+
+
+        </section>
+        <!--================End Get in Touch Area =================-->
+
+
+
+
+        <!--================Footer Area =================-->
+        <footer class="footr_area">
+
+
+            <div class="footer_copyright">
+                <div class="container">
+                    <div class="float-sm-left">
+                        <h5><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="fa fa-heart-o" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a>
+<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></h5>
+                    </div>
+
+                </div>
+            </div>
+        </footer>
+        <!--================End Footer Area =================-->
+
+
+
+
+        <link href="{% static 'sierra/vendors/revolution/css/layers.css' %}" rel="stylesheet">
+
+         <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+         <script src="{% static 'sierra/js/jquery-3.2.1.min.js' %}"></script>
+         <!-- Include all compiled plugins (below), or include individual files as needed -->
+         <script src="{% static 'sierra/js/popper.min.js' %}"></script>
+         <script src="{% static 'sierra/js/bootstrap.min.js' %}"></script>
+
+
+        <!-- Rev slider js -->
+        <script src="{% static 'sierra/vendors/revolution/js/jquery.themepunch.tools.min.js' %}"></script>
+        <script src="{% static 'sierra/vendors/revolution/js/jquery.themepunch.revolution.min.js' %}"></script>
+        <script src="{% static 'sierra/vendors/revolution/js/extensions/revolution.extension.actions.min.js' %}"></script>
+        <script src="{% static 'sierra/vendors/revolution/js/extensions/revolution.extension.video.min.js' %}"></script>
+        <script src="{% static 'sierra/vendors/revolution/js/extensions/revolution.extension.slideanims.min.js' %}"></script>
+        <script src="{% static 'sierra/vendors/revolution/js/extensions/revolution.extension.layeranimation.min.js' %}"></script>
+        <script src="{% static 'sierra/vendors/revolution/js/extensions/revolution.extension.navigation.min.js' %}"></script>
+        <script src="{% static 'sierra/vendors/revolution/js/extensions/revolution.extension.slideanims.min.js' %}"></script>
+        <!-- Extra plugin css -->
+        <script src="{% static 'sierra/vendors/counterup/jquery.waypoints.min.js' %}"></script>
+        <script src="{% static 'sierra/vendors/counterup/jquery.counterup.min.js' %}"></script>
+        <script src="{% static 'sierra/vendors/counterup/apear.js' %}"></script>
+        <script src="{% static 'sierra/vendors/counterup/countto.js' %}"></script>
+        <script src="{% static 'sierra/vendors/owl-carousel/owl.carousel.min.js' %}"></script>
+        <script src="{% static 'sierra/vendors/magnify-popup/jquery.magnific-popup.min.js' %}"></script>
+        <script src="{% static 'sierra/js/smoothscroll.js' %}"></script>
+        <script src="{% static 'sierra/vendors/circle-bar/circle-progress.min.js' %}"></script>
+        <script src="{% static 'sierra/vendors/circle-bar/plugins.js' %}"></script>
+
+        <script src="{% static 'sierra/js/circle-active.js' %}"></script>
+        <script src="{% static 'sierra/js/theme.js' %}"></script>
+        <script>
+            $.get('https://pcc.g0v.ronny.tw/api/getinfo', function(r){
+                    for (var key in r) {
+                        if (key.match('時間')) {
+                            var d = new Date(r[key]);
+                            var yyyymmdd = d.getFullYear() + ('00' + (d.getMonth() + 1)).slice(-2) + ('00' + d.getDate()).slice(-2);
+                            $('#status').append($('<li></li').text(key + '：').append($('<a></a>').attr('href', 'date/?date=' + yyyymmdd).text(yyyymmdd)));
+                        } else {
+                            $('#status').append($('<li></li').text(key + '：' + r[key]));
+                        }
+                    }
+            }, 'json');
+            </script>
+    </body>
+</html>
